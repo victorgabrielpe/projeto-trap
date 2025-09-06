@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Dream';
+    src: url('fontes/Dream.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bring';
+    src: url('fontes/BringRace.otf') format('opentype');
+}
+
+
+
+:root {
+    --fonte01: Arial, Helvetica, sans-serif;
+    --fonte02: 'Dream', Cursive;
+    --fonte03: 'Bring', Cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family:var(--fonte01);
+    background-image: linear-gradient(to top, #000 0%, #111 40%, #222 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+    font-family: var(--fonte03);
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: black;
+    padding: 20px;
+    box-shadow: -2px 14px 10px rgba(0, 0, 0, 0.247);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;   
+    padding: 0px 21px 0px 21px; 
+}
+nav > a:hover {
+    background-image: radial-gradient(circle, rgb(97, 97, 97), rgb(58, 58, 58));
+    color: black;
+    transition-duration: 0.5s;
+    padding: 21px;
+}
+
+nav > a:active {
+    background-image: radial-gradient(circle, rgb(216, 188, 253), rgb(177, 117, 255));
+    transition-duration: 0.5s;
+}
+
+main {
+    max-width: 1500px;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+    color: rgb(216, 188, 253);
+    font-size: 3em;
+    font-weight: normal;
+    font-family: var(--fonte03);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.151);
+}
+
+
+
+.capa {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
+}
+
+.beats {
+    margin: 0 auto;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0px 30pxpx 30px 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: color;
+    color: rgb(216, 188, 253);
+    align-items: center;
+    text-align: center;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+
+.card h2 {
+    margin: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 0px 0px 20px;
+    padding: 20px;
+    border-radius: 0px 10px;
+    background-color: rgb(177, 117, 255);
+    flex-direction: wrap;
+}
+
+.card a:hover {
+    background-color: rgb(255, 0, 255);
+    transition-duration: 0.5s;
+    box-shadow: 0 0 20px rgba(199, 125, 255, 0.178);
+    transform: scale(1.05);
+}
+
+div.video {
+    position: relative;
+  width: 100%;
+  max-width: 800px;   /* largura máxima */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  aspect-ratio: 16/9; /* mantém proporção do vídeo */
+  background: #000;   /* fundo preto pra não aparecer espaço vazio */
+  margin-top: 80px;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+div.btn-buy a {
+    color: white;
+    padding: 20px;
+    margin-left: 47%;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+}
+
+.btn-buy a:hover {
+    background-color: rgb(177, 117, 255);
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 1100px) {
+    .galery {
+        grid-template-columns: 1fr; /* celulares */
+    }
+}
+
+
+
