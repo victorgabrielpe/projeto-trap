@@ -34,6 +34,8 @@ body {
 header {
     background-color: black;
     color: white;
+    width: 100%;
+    display: flex;
 }
 
 header h1 {
@@ -45,6 +47,7 @@ header h1 {
 }
 
 nav {
+    display: flex;
     background-color: black;
     padding: 20px;
     box-shadow: -2px 14px 10px rgba(0, 0, 0, 0.247);
@@ -88,7 +91,7 @@ main h1 {
 
 
 .capa {
-    width: 300px;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
 }
